@@ -17,9 +17,9 @@ nav{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    position:sticky;
+    position: fixed;
     top: 0;
-    background-color: #141414;
+    background-color: rgba(20, 20, 20, 0.8);
     padding: 10px 0px;
     font-size: 18px;
   }
@@ -27,13 +27,24 @@ nav{
     display:flex;
     flex-wrap:wrap;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 550px;
+    
   
   }
   nav .onglets a {
     margin-right: 60px;
     cursor:pointer;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
   }
+
+  nav .onglets a:hover{
+    color: #17C3B2;
+  }
+
+  
 
 /* titre */
 
@@ -51,11 +62,19 @@ h1 {
     margin: 0; /* Supprimer la marge par défaut du titre */
 }
 
-.buttons {
-    margin-top: 20px;
+h3 {
+  margin-left: 10px;
 }
 
-/* fin titre
+
+
+/* fin titre */
+
+.buttons {
+    margin-top: 20px;
+    margin-left: 250px;
+    
+}
   
 /* Button register*/
 
@@ -137,3 +156,14 @@ h1 {
   .btn:hover::before {
     width: 160%;
   }
+
+    section{
+    height: 100vh;
+  }
+.page2{
+    background-color: #17C3B2;
+}
+
+.page3{
+    background-color: orange;
+}
