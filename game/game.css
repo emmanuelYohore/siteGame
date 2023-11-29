@@ -11,6 +11,7 @@ body {
 body .page {
   margin: 20px 80px
 }
+
 /* Barre de navigation */
 nav{
     display:flex;
@@ -20,33 +21,119 @@ nav{
     top: 0;
     background-color: #141414;
     padding: 10px 0px;
+    font-size: 18px;
   }
   nav .onglets{
     display:flex;
     flex-wrap:wrap;
-    margin-top: 5px;
-  }
-  nav .onglets{
-    display:flex;
-    flex-wrap:wrap;
+    margin-top: 30px;
+    margin-left: 20%;
+  
   }
   nav .onglets a {
-    margin-right: 20px;
+    margin-right: 60px;
     cursor:pointer;
   }
-  nav .buttons button{
-    padding: 13px 20px;
-    color: #fff;
-    border:none;
-    font-size: 15px;
-    cursor:pointer;
-    outline:none;
-  }
-  nav .buttons .login{
-    background-color: inherit;
+
+/* titre */
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Aligner le titre verticalement avec le logo */
+}
+
+.logo-container img {
+    margin-right: 10px; /* Marge entre le logo et le titre */
+}
+
+h1 {
+    font-size: 24px; /* Taille du titre */
+    margin: 0; /* Supprimer la marge par défaut du titre */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/* fin titre
+  
+/* Button register*/
+
+.register{
+    padding: 10px 20px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    cursor: pointer;
+    width: 150px;
+   }
+   
+    .register::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .register:hover::before {
+    width: 105%;
+   }
+   
+   .register:hover {
+    color: #111;
+   }
+
+/* Button login*/
+
+.btn {
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    cursor: pointer;
+    width: 150px;
     margin-right: 10px;
-    color: #8f8f8f;
   }
-  nav .buttons .register{
-    background-color: #f54266;
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
   }
